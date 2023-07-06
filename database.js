@@ -60,7 +60,8 @@ const getLongUrl = async (shortUrl) => {
     console.error('Error retrieving long URL from the database:', error);
     throw error;
   }
-};
+}
+;
 // Retrieve all URLs from the database
 const getAllURLs = async () => {
   try {

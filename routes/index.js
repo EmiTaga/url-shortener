@@ -3,7 +3,7 @@ const app = express();
 const ExcelJS = require('exceljs');
 const qr = require('qr-image');
 const mysql = require('mysql');
-const { conn, saveURL, getAllURLs, getLongUrl } = require('../database');
+const { saveURL, getAllURLs, getLongUrl } = require('../database');
 
 // MySQL connection configuration
 app.get('/:shortUrl', async (req, res) => {

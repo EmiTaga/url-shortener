@@ -17,6 +17,7 @@ app.get('/upload', (req, res) => {
 app.post('/upload', upload.single('csv'), (req, res) => {
     if (!req.file || !req.file.path) {
       return res.status(400).send('No CSV file uploaded.');
+    
     }
   
     const csvFilePath = req.file.path;

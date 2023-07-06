@@ -217,4 +217,5 @@ app.use('/login', loginRouter);
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
-});
+})
+;
